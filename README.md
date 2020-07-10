@@ -5,7 +5,7 @@ A multi-tool for flooding http, udp, tcp and more. Under development might add a
 ## Installation
 
 ```
-git clone https://github.com/zenqiproject/citrus
+git clone https://github.com/zenqipy/citrus
 cd citrus
 ```
 ## Usage
