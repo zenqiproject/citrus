@@ -9,7 +9,7 @@ git clone https://github.com/zenqipy/citrus
 cd citrus
 ```
 ## Usage
-![](img/usage.jpg)
+![](img/usage.JPG)
 ```py citrus.py <host> -p 80 -t 100 -m TCP```
 
 ## Liscense
