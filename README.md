@@ -11,7 +11,8 @@ cd citrus
 ## Usage
 ![](img/usage.JPG)
 ```
-py citrus.py <host> -p 80 -t 100 -m TCP```
+py citrus.py <host> -p 80 -t 100 -m TCP
+```
 
 ## Liscense
 MIT License
