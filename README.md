@@ -10,12 +10,12 @@ cd citrus
 ```
 ## Usage
 ```
- ▄████▄     |
-▒██▀ ▀█     | Welcome to Citrus
-▒██    ▄    | Author: Zenqi
-▒██▄ ▄██    |
-▒ ████▀     | https://github.com/zenqiwp/citrus
-░ ░▒ ▒      |
+ ▄████▄     
+▒██▀ ▀█      Welcome to Citrus
+▒██    ▄     Author: Zenqi
+▒██▄ ▄██    
+▒ ████▀      https://github.com/zenqiwp/citrus
+░ ░▒ ▒      
 ░  ▒
 
 
