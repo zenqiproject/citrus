@@ -4,7 +4,8 @@ A multi-tool for flooding http, udp, tcp and more. Under development might add a
 
 ## Installation
 
-```git clone https://github.com/zenproject/citrus
+```
+git clone https://github.com/zenproject/citrus
 cd citrus
 ```
 ## Usage
