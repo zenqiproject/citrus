@@ -2,16 +2,16 @@
 
 A multi-tool for flooding http, udp, tcp and more. Under development might add another features.
 
-##Installation
+## Installation
 
 ```git clone https://github.com/zenproject/citrus
 cd citrus
 ```
-##Usage
+## Usage
 ![](img/usage.jpg)
 ```py citrus.py <host> -p 80 -t 100 -m TCP```
 
-##Liscense
+## Liscense
 MIT License
 
 Copyright © 2020 Zenqi
