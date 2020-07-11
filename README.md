@@ -12,7 +12,7 @@ cd citrus
 ```
  ▄████▄     
 ▒██▀ ▀█      |Welcome to Citrus
-▒██    ▄     |Author: Zenqi
+▒██    ▄      Author: Zenqi
 ▒██▄ ▄██     
 ▒ ████▀      |https://github.com/zenqiwp/citrus
 ░ ░▒ ▒      
