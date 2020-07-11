@@ -1,4 +1,4 @@
-![](https://freevector-images.s3.amazonaws.com/uploads/vector/preview/40072/FreeVectorLemonSlice.jpg)
+
 
 # Citrus
 
