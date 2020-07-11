@@ -1,4 +1,4 @@
-![](img/citrus.png)
+
 
 # Citrus
 
