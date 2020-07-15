@@ -112,7 +112,7 @@ def UNITED(threads, host, port, mode):
                             "X-a: {}\r\n".format(random.randint(1, 5000)).encode("utf-8")
                         )
                     except socket.error:
-                        total_packets.remove(s)
+                        total_packets.remove(sock)
 
                 for _ in range(60000 - len(total_packets)):
                     print("[-] Re-creating packet")
