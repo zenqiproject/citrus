@@ -6,7 +6,7 @@ import sys, os , time
 
 def UNITED(threads, host, port, mode):
     
-    print("\nFlooding << HOST: %s PORT: %s METHOD: %s >> with %s threads" %(host, port, threads, mode))
+    print("\nFlooding << HOST: %s PORT: %s METHOD: %s >> with %s threads" %(host, port, mode, threads))
     time.sleep(5)   
     
     def useragent_list():
