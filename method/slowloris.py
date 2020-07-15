@@ -26,7 +26,7 @@ import random
 import threading
 import sys, os , time
 
-def SLOWLORIS(threads, host, port, mode):
+def UNITED(threads, host, port, mode):
     
     print("\nFlooding << HOST: %s PORT: %s METHOD: %s >> with %s threads" %(host, port, mode, threads))
     time.sleep(5)   
@@ -105,7 +105,7 @@ def SLOWLORIS(threads, host, port, mode):
 
         return sock
 
-    def slowlorisAttack():
+    def unitedAttack():
         #host = host
         #port = port
         total_packets = []
