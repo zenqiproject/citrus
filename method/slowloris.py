@@ -149,7 +149,7 @@ def SLOWLORIS(threads, host, port, mode):
                 time.sleep(5)
 
             except (KeyboardInterrupt, SystemExit):
-                print("\n[-] Celestia collapsed. Cannot resolved the problem")
+                print("\n[-] Citrus collapsed. Cannot resolved the problem")
                 sys.exit()
     thread_list = []
     for thread in range(threads):
