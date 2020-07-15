@@ -48,7 +48,7 @@ def usage():
     <host>: Target host to perfom attack
 
     -p, --port: Target port, usually 80
-    -m, -- mode: HTTP, Slowloris, TCP, UDP
+    -m, -- mode: HTTP, United , TCP, UDP
     -t, --thread: Number of threads 
 
     Example: citrus 192.168.1.1 -p 80 -m <method> -t 500
@@ -120,9 +120,9 @@ def main():
     elif mode == "HTTP" or mode == "HTTP FLOOD"or mode == "http" or mode == "httpflood":
         from method.httpflood import HTTP
         HTTP(threads, host, port, mode)
-    elif mode == "SLOWLORIS" or mode == "slowloris":
-        from method.slowloris import SLOWLORIS
-        flood = SLOWLORIS(threads, host, port, mode)
+    elif mode == "united" or mode == "UNITED":
+        from method.unitedattack import UNITED
+        UNITED(threads, host, port, mode)
         
     else:
         if sys.platform == "win32" or sys.platform == "win64":
