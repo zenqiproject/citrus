@@ -87,10 +87,11 @@ def UNITED(threads, host, port, mode):
         #host = host
         #port = port
         total_packets = []
+        sent = 0
         while True:
             try:
-                
-                print("[-] Flooding server << HOST: %s PORT: %s >> with packets: %s" %(host, port, _))
+                sent += 1
+                print("[-] Flooding server << HOST: %s PORT: %s >> with packets: %s" %(host, port, sent))
                 sock = sendPacket()
 
             except socket.error:
