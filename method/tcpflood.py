@@ -60,8 +60,7 @@ def TCP(threads, host, port, mode):
                         sock.send("{}\r\n".format(data).encode("utf-8"))
 
                         sock.send(packet) # send packet to the connected host
-                        sock.send(data) # send packet to the connected host
-
+                        
 
 
                 except Exception as e:
