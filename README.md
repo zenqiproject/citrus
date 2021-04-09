@@ -1,7 +1,7 @@
 
 
 # Citrus
-> This project is now in stable release. I might stop developing this next month or even next year but still issues are open.
+> I'll start developing this, I'll add more features, fix the code format and everything will be changed.
 
 A multi-tool for flooding http, udp, tcp and more. Under development might add another features.
 
