@@ -1,16 +1,10 @@
 
 
 # Citrus
-> I'll start developing this, I'll add more features, fix the code format and everything will be changed.
+> moved to -> zenqiproject/citrus
 
 A multi-tool for flooding http, udp, tcp and more. Under development might add another features.
 
-## Installation
-
-```
-git clone https://github.com/zenqipy/citrus
-cd citrus
-```
 ## Usage
 ```
  ▄████▄     
